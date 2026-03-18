@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UsBox - 약관 및 정책</title>
+  <title>UsBox - Terms & Policy</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       background: #f5f5f7;
       color: #1d1d1f;
       line-height: 1.75;
@@ -19,6 +19,7 @@
       border-bottom: 1px solid #e0e0e0;
       padding: 20px 24px;
       text-align: center;
+      position: relative;
     }
 
     header h1 {
@@ -31,6 +32,24 @@
       font-size: 14px;
       color: #6e6e73;
       margin-top: 4px;
+    }
+
+    .lang-switch {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+
+    .lang-switch a {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      color: #1a73e8;
+      background: #e8f0fe;
+      border-radius: 20px;
+      padding: 4px 14px;
     }
 
     .container {
@@ -50,7 +69,6 @@
     .intro {
       font-size: 15px;
       color: #3a3a3c;
-      margin-bottom: 8px;
     }
 
     h2 {
@@ -62,7 +80,7 @@
       color: #1d1d1f;
     }
 
-    h2:first-child { margin-top: 0; }
+    h2:first-of-type { margin-top: 0; }
 
     h3 {
       font-size: 16px;
@@ -122,7 +140,7 @@
       padding: 2px 12px;
       font-size: 13px;
       font-weight: 600;
-      margin-bottom: 8px;
+      margin-bottom: 16px;
     }
 
     .contact-box {
@@ -150,186 +168,189 @@
 
 <header>
   <h1>UsBox</h1>
-  <p>약관 및 정책</p>
+  <p>Terms & Policy</p>
+  <div class="lang-switch">
+    <a href="ko.html">한국어</a>
+  </div>
 </header>
 
 <div class="container">
 
   <div class="card">
     <p class="intro">
-      이 페이지에는 UsBox 애플리케이션의 서비스 이용약관 및 개인정보 처리방침이 포함되어 있습니다.<br>
-      계정을 생성하거나 서비스를 이용함으로써 사용자는 아래에 설명된 이용약관과 개인정보 처리방침에 동의하게 됩니다.
+      This page contains the Terms of Service and Privacy Policy for the UsBox application.<br>
+      By creating an account or using the service, you agree to the Terms of Service and Privacy Policy described below.
     </p>
   </div>
 
-  <!-- 서비스 이용약관 -->
+  <!-- Terms of Service -->
   <div class="card">
-    <span class="tag">서비스 이용약관</span>
+    <span class="tag">Terms of Service</span>
 
-    <h2>1. 서비스 설명</h2>
-    <p>UsBox는 사용자가 개인 또는 그룹의 지출을 기록하고 관리할 수 있도록 돕는 공유 지출 관리 서비스입니다.</p>
-    <p>서비스의 주요 기능은 다음과 같습니다:</p>
+    <h2>1. Service Description</h2>
+    <p>UsBox is a shared expense management service that helps users record and manage personal or group expenses.</p>
+    <p>Key features of the service include:</p>
     <ul>
-      <li>개인 및 공유 지출 기록 관리</li>
-      <li>수입 및 지출 기록</li>
-      <li>그룹 구성원 간 공동 지출 관리</li>
-      <li>자동 정산 계산 기능</li>
-      <li>클라우드 기반 데이터 동기화 및 백업</li>
+      <li>Personal and shared expense record management</li>
+      <li>Income and expense tracking</li>
+      <li>Joint expense management among group members</li>
+      <li>Automatic settlement calculation</li>
+      <li>Cloud-based data synchronization and backup</li>
     </ul>
-    <p>UsBox는 금융기관이 아니며, 은행 서비스, 결제 처리 또는 송금 서비스를 제공하지 않습니다.</p>
+    <p>UsBox is not a financial institution and does not provide banking services, payment processing, or money transfer services.</p>
 
     <div class="section-divider"></div>
 
-    <h2>2. 계정 등록</h2>
-    <p>사용자는 이메일 인증 또는 지원되는 소셜 로그인 제공자를 통해 계정을 생성할 수 있습니다.</p>
-    <p>사용자는 다음 사항에 동의합니다:</p>
+    <h2>2. Account Registration</h2>
+    <p>Users can create an account through email verification or supported social login providers.</p>
+    <p>Users agree to:</p>
     <ul>
-      <li>정확하고 완전한 정보를 제공할 것</li>
-      <li>계정 보안을 유지할 것</li>
-      <li>자신의 계정을 통해 이루어지는 활동에 대한 책임을 질 것</li>
+      <li>Provide accurate and complete information</li>
+      <li>Maintain account security</li>
+      <li>Take responsibility for activities conducted through their account</li>
     </ul>
-    <p>회사는 사용자의 부주의로 인해 발생한 무단 접근에 대해 책임을 지지 않습니다.</p>
+    <p>The company is not responsible for unauthorized access resulting from user negligence.</p>
 
     <div class="section-divider"></div>
 
-    <h2>3. 계정 삭제</h2>
-    <p>사용자는 앱 내 메뉴를 통해 언제든지 계정을 삭제할 수 있습니다:</p>
-    <p><span class="highlight">프로필 &gt; 계정 삭제</span></p>
-    <p>계정이 삭제되면 다음과 같은 조치가 이루어집니다:</p>
+    <h2>3. Account Deletion</h2>
+    <p>Users can delete their account at any time through the in-app menu:</p>
+    <p><span class="highlight">Profile &gt; Delete Account</span></p>
+    <p>Upon account deletion, the following actions will be taken:</p>
     <ul>
-      <li>계정과 관련된 모든 개인 데이터가 영구적으로 삭제됩니다</li>
-      <li>사용자가 생성한 지출 기록 및 그룹 데이터가 삭제됩니다</li>
-      <li>업로드된 파일과 이미지가 저장소에서 삭제됩니다</li>
+      <li>All personal data associated with the account will be permanently deleted</li>
+      <li>Expense records and group data created by the user will be deleted</li>
+      <li>Uploaded files and images will be deleted from storage</li>
     </ul>
-    <p>삭제된 데이터는 복구할 수 없습니다. 법률에 의해 요구되는 경우를 제외하고 회사는 삭제된 사용자 데이터를 보관하지 않습니다.</p>
+    <p>Deleted data cannot be recovered. Except as required by law, the company does not retain deleted user data.</p>
 
     <div class="section-divider"></div>
 
-    <h2>4. 허용되는 사용</h2>
-    <p>사용자는 다음 행위를 하지 않을 것에 동의합니다:</p>
+    <h2>4. Acceptable Use</h2>
+    <p>Users agree not to:</p>
     <ul>
-      <li>다른 사람을 사칭하는 행위</li>
-      <li>허위 또는 오해의 소지가 있는 정보 제공</li>
-      <li>서비스 운영을 방해하는 행위</li>
-      <li>불법적인 목적으로 서비스 이용</li>
-      <li>다른 사용자의 권리를 침해하는 행위</li>
+      <li>Impersonate others</li>
+      <li>Provide false or misleading information</li>
+      <li>Interfere with service operations</li>
+      <li>Use the service for illegal purposes</li>
+      <li>Infringe on the rights of other users</li>
     </ul>
-    <p>이러한 규정을 위반할 경우 계정이 일시 정지되거나 종료될 수 있습니다.</p>
+    <p>Violation of these rules may result in account suspension or termination.</p>
 
     <div class="section-divider"></div>
 
-    <h2>5. 서비스 제공</h2>
-    <p>회사는 다음과 같은 사유로 인해 서비스를 일시적으로 중단하거나 변경할 수 있습니다:</p>
+    <h2>5. Service Availability</h2>
+    <p>The company may temporarily suspend or modify the service due to:</p>
     <ul>
-      <li>시스템 유지보수</li>
-      <li>기술적 장애</li>
-      <li>보안 문제</li>
-      <li>합리적인 통제 범위를 벗어난 사건</li>
+      <li>System maintenance</li>
+      <li>Technical failures</li>
+      <li>Security issues</li>
+      <li>Events beyond reasonable control</li>
     </ul>
-    <p>가능한 경우 회사는 사전에 공지하기 위해 합리적인 노력을 기울입니다.</p>
+    <p>Where possible, the company will make reasonable efforts to provide advance notice.</p>
 
     <div class="section-divider"></div>
 
-    <h2>6. 정산 계산 면책 조항</h2>
-    <p>정산 계산 기능은 사용자가 입력한 정보를 기반으로 결과를 제공합니다. 회사는 사용자 간의 금전 거래에 직접 참여하지 않습니다. 공동 지출과 관련된 분쟁 해결에 대한 책임은 전적으로 사용자에게 있습니다.</p>
+    <h2>6. Settlement Calculation Disclaimer</h2>
+    <p>The settlement calculation feature provides results based on information entered by users. The company does not directly participate in monetary transactions between users. Responsibility for resolving disputes related to shared expenses rests entirely with the users.</p>
 
     <div class="section-divider"></div>
 
-    <h2>7. 책임의 제한</h2>
-    <p>법률이 허용하는 최대 범위 내에서 회사는 다음 사항에 대해 책임을 지지 않습니다:</p>
+    <h2>7. Limitation of Liability</h2>
+    <p>To the maximum extent permitted by law, the company is not liable for:</p>
     <ul>
-      <li>사용자의 잘못된 입력으로 인해 발생한 오류</li>
-      <li>사용자 간의 분쟁</li>
-      <li>기기 또는 운영체제 문제</li>
-      <li>제3자 인프라 서비스로 인해 발생한 서비스 중단</li>
+      <li>Errors resulting from incorrect user input</li>
+      <li>Disputes between users</li>
+      <li>Device or operating system issues</li>
+      <li>Service interruptions caused by third-party infrastructure services</li>
     </ul>
 
     <div class="section-divider"></div>
 
-    <h2>8. 지적 재산권</h2>
-    <p>소프트웨어, 디자인 및 관련 콘텐츠를 포함한 서비스의 모든 권리는 회사에 있으며 관련 지적 재산권 법률에 의해 보호됩니다. 사용자는 회사의 허가 없이 서비스의 어떠한 부분도 복사, 배포 또는 수정할 수 없습니다.</p>
+    <h2>8. Intellectual Property</h2>
+    <p>All rights to the service, including software, design, and related content, belong to the company and are protected by applicable intellectual property laws. Users may not copy, distribute, or modify any part of the service without the company's permission.</p>
 
     <div class="section-divider"></div>
 
-    <h2>9. 준거법</h2>
-    <p>본 약관은 대한민국 법률에 따라 규율됩니다. 서비스와 관련하여 발생하는 모든 분쟁은 관련 법률에 따라 해결됩니다.</p>
+    <h2>9. Governing Law</h2>
+    <p>These terms are governed by the laws of the Republic of Korea. All disputes arising in connection with the service shall be resolved in accordance with applicable laws.</p>
   </div>
 
-  <!-- 개인정보 처리방침 -->
+  <!-- Privacy Policy -->
   <div class="card">
-    <span class="tag">개인정보 처리방침</span>
+    <span class="tag">Privacy Policy</span>
 
-    <h2>1. 수집하는 정보</h2>
+    <h2>1. Information We Collect</h2>
 
-    <h3>계정 정보</h3>
-    <p>사용자가 계정을 생성할 때 다음 정보가 수집될 수 있습니다:</p>
+    <h3>Account Information</h3>
+    <p>When a user creates an account, the following information may be collected:</p>
     <ul>
-      <li>이메일 주소</li>
-      <li>닉네임</li>
-      <li>고유 사용자 식별자 (UID)</li>
-      <li>인증 제공자 정보</li>
+      <li>Email address</li>
+      <li>Nickname</li>
+      <li>Unique user identifier (UID)</li>
+      <li>Authentication provider information</li>
     </ul>
-    <p>비밀번호는 Firebase Authentication을 통해 안전하게 암호화되어 관리됩니다. 회사는 평문 비밀번호를 저장하거나 접근하지 않습니다.</p>
+    <p>Passwords are securely encrypted and managed through Firebase Authentication. The company does not store or access plaintext passwords.</p>
 
-    <h3>서비스 데이터</h3>
-    <p>서비스 이용 중 생성되는 정보에는 다음이 포함될 수 있습니다:</p>
+    <h3>Service Data</h3>
+    <p>Information generated during use of the service may include:</p>
     <ul>
-      <li>지출 및 수입 기록</li>
-      <li>메모 내용</li>
-      <li>그룹 정보</li>
-      <li>정산 기록</li>
-      <li>생성 및 수정 시간 정보</li>
-    </ul>
-
-    <h3>업로드 콘텐츠</h3>
-    <p>사용자가 파일을 업로드하는 경우 다음 항목이 저장될 수 있습니다:</p>
-    <ul>
-      <li>영수증 이미지</li>
-      <li>첨부 파일</li>
+      <li>Expense and income records</li>
+      <li>Memo content</li>
+      <li>Group information</li>
+      <li>Settlement records</li>
+      <li>Creation and modification timestamps</li>
     </ul>
 
-    <h3>자동 수집 정보</h3>
-    <p>서비스는 다음과 같은 기술 정보를 자동으로 수집할 수 있습니다:</p>
+    <h3>Uploaded Content</h3>
+    <p>When users upload files, the following items may be stored:</p>
     <ul>
-      <li>기기 모델</li>
-      <li>운영체제 버전</li>
-      <li>앱 사용 통계</li>
-      <li>크래시 보고서 및 오류 로그</li>
-      <li>접속 시간 정보</li>
+      <li>Receipt images</li>
+      <li>Attachments</li>
     </ul>
-    <p>이 정보는 Firebase Analytics 및 Crashlytics를 통해 수집될 수 있습니다. 서비스는 광고 식별자(IDFA)를 사용하지 않으며 광고 목적의 사용자 추적을 수행하지 않습니다.</p>
+
+    <h3>Automatically Collected Information</h3>
+    <p>The service may automatically collect the following technical information:</p>
+    <ul>
+      <li>Device model</li>
+      <li>Operating system version</li>
+      <li>App usage statistics</li>
+      <li>Crash reports and error logs</li>
+      <li>Access time information</li>
+    </ul>
+    <p>This information may be collected through Firebase Analytics and Crashlytics. The service does not use advertising identifiers (IDFA) and does not perform user tracking for advertising purposes.</p>
 
     <div class="section-divider"></div>
 
-    <h2>2. 정보의 이용 목적</h2>
-    <p>수집된 정보는 다음 목적을 위해 사용될 수 있습니다:</p>
+    <h2>2. How We Use Information</h2>
+    <p>Collected information may be used for the following purposes:</p>
     <ul>
-      <li>사용자 인증 및 계정 관리</li>
-      <li>공동 지출 관리 기능 제공</li>
-      <li>정산 계산 수행</li>
-      <li>여러 기기 간 사용자 데이터 동기화</li>
-      <li>서비스 성능 및 안정성 개선</li>
-      <li>애플리케이션 오류 모니터링 및 해결</li>
+      <li>User authentication and account management</li>
+      <li>Providing shared expense management features</li>
+      <li>Performing settlement calculations</li>
+      <li>Synchronizing user data across multiple devices</li>
+      <li>Improving service performance and stability</li>
+      <li>Monitoring and resolving application errors</li>
     </ul>
 
     <div class="section-divider"></div>
 
-    <h2>3. 데이터 보관 및 삭제</h2>
-    <p>개인 데이터는 사용자 계정이 활성 상태인 동안에만 보관됩니다.</p>
-    <p>사용자는 다음 메뉴를 통해 계정을 삭제할 수 있습니다:</p>
-    <p><span class="highlight">프로필 &gt; 계정 삭제</span></p>
-    <p>계정이 삭제되면:</p>
+    <h2>3. Data Retention & Deletion</h2>
+    <p>Personal data is retained only while the user account is active.</p>
+    <p>Users can delete their account through:</p>
+    <p><span class="highlight">Profile &gt; Delete Account</span></p>
+    <p>Upon account deletion:</p>
     <ul>
-      <li>모든 개인 데이터가 영구적으로 삭제됩니다</li>
-      <li>지출 기록 및 그룹 참여 데이터가 제거됩니다</li>
-      <li>업로드된 이미지 및 파일이 삭제됩니다</li>
+      <li>All personal data is permanently deleted</li>
+      <li>Expense records and group participation data are removed</li>
+      <li>Uploaded images and files are deleted</li>
     </ul>
-    <p>삭제된 데이터는 복구할 수 없습니다. 법률에 의해 요구되는 경우를 제외하고 회사는 삭제된 사용자 데이터를 보관하지 않습니다.</p>
+    <p>Deleted data cannot be recovered. Except as required by law, the company does not retain deleted user data.</p>
 
     <div class="section-divider"></div>
 
-    <h2>4. 제3자 서비스</h2>
-    <p>UsBox는 다음 제3자 서비스를 사용합니다:</p>
+    <h2>4. Third-Party Services</h2>
+    <p>UsBox uses the following third-party services:</p>
     <h3>Google Firebase</h3>
     <ul>
       <li>Authentication</li>
@@ -338,44 +359,44 @@
       <li>Firebase Analytics</li>
       <li>Firebase Crashlytics</li>
     </ul>
-    <p>이러한 서비스는 사용자의 국가 외부에 위치한 Google 데이터 센터에서 데이터를 처리하거나 저장할 수 있습니다.</p>
+    <p>These services may process or store data in Google data centers located outside the user's country.</p>
 
     <div class="section-divider"></div>
 
-    <h2>5. 데이터 공유</h2>
-    <p>회사는 개인 정보를 제3자에게 판매, 임대 또는 공유하지 않습니다. 단, 법률 또는 법적 절차에 의해 요구되는 경우에만 정보가 공개될 수 있습니다.</p>
+    <h2>5. Data Sharing</h2>
+    <p>The company does not sell, rent, or share personal information with third parties. Information may only be disclosed when required by law or legal process.</p>
 
     <div class="section-divider"></div>
 
-    <h2>6. 사용자 권리</h2>
-    <p>사용자는 다음 권리를 가집니다:</p>
+    <h2>6. User Rights</h2>
+    <p>Users have the following rights:</p>
     <ul>
-      <li>자신의 개인정보에 대한 접근</li>
-      <li>부정확한 정보에 대한 수정 요청</li>
-      <li>데이터 삭제 요청</li>
-      <li>언제든지 계정 삭제</li>
+      <li>Access to their personal information</li>
+      <li>Request correction of inaccurate information</li>
+      <li>Request data deletion</li>
+      <li>Delete their account at any time</li>
     </ul>
 
     <div class="section-divider"></div>
 
-    <h2>7. 데이터 보안</h2>
-    <p>회사는 다음과 같은 기술적 및 관리적 조치를 통해 사용자 데이터를 보호합니다:</p>
+    <h2>7. Data Security</h2>
+    <p>The company protects user data through the following technical and administrative measures:</p>
     <ul>
-      <li>HTTPS 암호화 통신</li>
-      <li>안전한 클라우드 인프라</li>
-      <li>접근 권한 통제</li>
-      <li>정기적인 시스템 모니터링</li>
+      <li>HTTPS encrypted communication</li>
+      <li>Secure cloud infrastructure</li>
+      <li>Access control</li>
+      <li>Regular system monitoring</li>
     </ul>
 
     <div class="section-divider"></div>
 
-    <h2>8. 아동의 개인정보 보호</h2>
-    <p>본 서비스는 보호자 또는 법정 대리인의 동의 없이 만 14세 미만 아동을 대상으로 하지 않습니다.</p>
+    <h2>8. Children's Privacy</h2>
+    <p>This service is not directed at children under the age of 14 without the consent of a parent or legal guardian.</p>
 
     <div class="section-divider"></div>
 
-    <h2>9. 문의</h2>
-    <p>본 약관 또는 개인정보 처리방침에 대한 문의는 아래 이메일로 연락해 주시기 바랍니다.</p>
+    <h2>9. Contact</h2>
+    <p>For inquiries regarding these terms or the privacy policy, please contact us at the email below.</p>
     <div class="contact-box">
       <a href="mailto:dojasonx7@gmail.com">dojasonx7@gmail.com</a>
     </div>
