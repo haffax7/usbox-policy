@@ -16,7 +16,17 @@
     header h1 { font-size: 22px; font-weight: 700; color: #1d1d1f; }
     header p { font-size: 14px; color: #6e6e73; margin-top: 4px; }
     .lang-switch { position: absolute; top: 50%; right: 20px; transform: translateY(-50%); }
-    .lang-switch a { display: inline-block; text-decoration: none; font-size: 13px; font-weight: 600; color: #1a73e8; background: #e8f0fe; border-radius: 20px; padding: 4px 14px; }
+    .lang-switch select {
+      font-size: 13px;
+      font-weight: 600;
+      color: #1a73e8;
+      background: #e8f0fe;
+      border: 1.5px solid #c5d8fc;
+      border-radius: 20px;
+      padding: 5px 12px;
+      cursor: pointer;
+      outline: none;
+    }
     .container { max-width: 720px; margin: 32px auto; padding: 0 16px 60px; }
     .card { background: #fff; border-radius: 16px; padding: 32px; margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
     .intro { font-size: 15px; color: #3a3a3c; }
@@ -39,7 +49,24 @@
 <header>
   <h1>UsBox</h1>
   <p>服务条款与隐私政策</p>
-  <div class="lang-switch"><a href="index.html">English</a></div>
+  <div class="lang-switch">
+    <select onchange="location.href=this.value">
+      <option value="index.html">English</option>
+      <option value="ko.html">한국어</option>
+      <option value="ja.html">日本語</option>
+      <option value="zh_CN.html" selected>简体中文</option>
+      <option value="zh_TW.html">繁體中文</option>
+      <option value="es.html">Español</option>
+      <option value="fr.html">Français</option>
+      <option value="de.html">Deutsch</option>
+      <option value="hi.html">हिन्दी</option>
+      <option value="id.html">Bahasa Indonesia</option>
+      <option value="ms.html">Bahasa Melayu</option>
+      <option value="pt_BR.html">Português (BR)</option>
+      <option value="th.html">ภาษาไทย</option>
+      <option value="vi.html">Tiếng Việt</option>
+    </select>
+  </div>
 </header>
 <div class="container">
   <div class="card">
